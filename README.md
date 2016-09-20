@@ -4,7 +4,9 @@ A simple, business agnostic solution to jump start your project.
 
 # Configuration
 
-## appsettings.json
+## API
+
+### appsettings.json
 
 Make sure you fill `DOMAIN` and `CLIENT_ID` from your Auth0 settings.
 
@@ -25,7 +27,9 @@ Make sure you fill `DOMAIN` and `CLIENT_ID` from your Auth0 settings.
 }
 ```
 
-## auth0-variables.js
+## Single Page Application
+
+### auth0-variables.js
 
 Make sure you fill `DOMAIN` and `CLIENT_ID` from your Auth0 settings and add callback URL to your Auth0 settings under "Allowed Callback URLs".
 
