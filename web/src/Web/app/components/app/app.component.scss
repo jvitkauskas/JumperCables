@@ -1,0 +1,32 @@
+﻿@import "../../styles/media.scss";
+
+@media #{$information-phone} {
+::-webkit-scrollbar {
+    display: none;
+}
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-button:vertical:decrement{
+    height:50px;
+}
+
+.content{
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 50px;
+}
