@@ -10,16 +10,12 @@ namespace Web.Controllers
     public class HomeController : Controller
     {
         private readonly IConfigurationRoot _configuration;
-        private static readonly HttpClient HttpClient;
+        private readonly HttpClient _httpClient;
 
-        public HomeController(IConfigurationRoot configuration)
+        public HomeController(IConfigurationRoot configuration, HttpClient httpClient)
         {
             _configuration = configuration;
-        }
-
-        static HomeController()
-        {
-            HttpClient = new HttpClient();
+            _httpClient = httpClient;
         }
 
         public IActionResult Index()
@@ -39,7 +35,7 @@ namespace Web.Controllers
 
             try
             {
-                var stringResponse = HttpClient.GetAsync($"{_configuration["ApiUrls:locationAPI"]}{ResolveIp()}").Result.Content.ReadAsStringAsync().Result;
+                var stringResponse = _httpClient.GetAsync($"{_configuration["ApiUrls:locationAPI"]}{ResolveIp()}").Result.Content.ReadAsStringAsync().Result;
                 var response = JsonConvert.DeserializeObject<JObject>(stringResponse);
 
                 countryCode = response.GetValue("countryCode").ToString();
