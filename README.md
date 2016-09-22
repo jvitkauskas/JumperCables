@@ -46,7 +46,7 @@ Make sure you fill `clientId` and `domain` from your Auth0 settings and add call
 1. `npm install`
 2. Build ng2 bundles
   * `npm run build:dev` - build app using dev config (all errors, no minification, "fast")
-  * `npm run build` - build app using production config (minified, enabled prod mode and etc. Takes longer than `npm run build`)
+  * `npm run build` - build app using production config (minified, enabled prod mode and etc. Takes longer than `npm run build:dev`)
   * `npm run tsc` - run typescript compiler **try** https://www.npmjs.com/package/ntypescript
   * `npm run tsc:w` - run typscript compiler in watch mode **try** https://www.npmjs.com/package/ntypescript
   * `npm run watch` - build app using dev config in watch mode 
