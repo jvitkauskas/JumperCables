@@ -6,6 +6,8 @@ A simple, business agnostic solution to jump start your project.
 
 ## API
 
+API service built using [.NET Core](https://www.microsoft.com/net/core).
+
 ### appsettings.json
 
 Make sure you fill `DOMAIN` and `CLIENT_ID` from your Auth0 settings.
@@ -29,9 +31,12 @@ Make sure you fill `DOMAIN` and `CLIENT_ID` from your Auth0 settings.
 
 ## Single Page Application
 
+Single Page Application is built using [Angular2](https://angular.io).
+
 ### Web\app\providers\settings\appSettings.ts
 
-Some configurable values in 'settings' object and Auth0 settings in `auth0` object
+Some configurable values in `settings` object and Auth0 settings in `auth0` object.
+
 Make sure you fill `clientId` and `domain` from your Auth0 settings and add callback URL to your Auth0 settings under "Allowed Callback URLs".
 
 ```
@@ -41,7 +46,7 @@ Make sure you fill `clientId` and `domain` from your Auth0 settings and add call
     }
 ```
 
-## Single page app build
+## Build
 
 1. `npm install`
 2. Build ng2 bundles
@@ -51,5 +56,3 @@ Make sure you fill `clientId` and `domain` from your Auth0 settings and add call
   * `npm run tsc:w` - run typscript compiler in watch mode **try** https://www.npmjs.com/package/ntypescript
   * `npm run watch` - build app using dev config in watch mode 
 3. **Create something awesome!**
-  
-
