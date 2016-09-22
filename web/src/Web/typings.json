@@ -1,0 +1,9 @@
+{
+    "globalDependencies": {
+        "auth0-js": "registry:dt/auth0-js#0.0.0+20160830143606",
+        "auth0.lock": "registry:dt/auth0.lock#0.0.0+20160919061738",
+        "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+        "hammerjs": "github:DefinitelyTyped/DefinitelyTyped/hammerjs/hammerjs.d.ts#de8e80dfe5360fef44d00c41257d5ef37add000a",
+        "node": "registry:dt/node#6.0.0+20160621231320"
+    }
+}
