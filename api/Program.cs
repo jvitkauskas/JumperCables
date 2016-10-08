@@ -10,9 +10,11 @@ namespace JumperCables
         {
             var config = new ConfigurationBuilder()
                 .AddCommandLine(args)
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("hosting.json", optional: true)
                 .AddEnvironmentVariables(prefix: "ASPNETCORE_")
                 .Build();
-            
+
             var host = new WebHostBuilder()
                 .UseConfiguration(config)
                 .UseKestrel()
