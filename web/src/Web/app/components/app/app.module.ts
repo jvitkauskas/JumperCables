@@ -17,7 +17,7 @@ import {LangSelectorComponent} from '../header/lang.selector.component';
 import {HeaderComponent} from '../header/header.component';
 import {FooterComponent} from '../footer/footer.component';
 import {Auth} from '../../providers/authentication/auth.service.ts';
-import {ContactsProvider } from '../contacts/contacts.provider';
+import {ContactsProvider} from '../contacts/shared/contacts.provider';
 
 @NgModule({
     imports: [
