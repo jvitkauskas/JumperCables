@@ -1,5 +1,6 @@
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JumperCables.Controllers
@@ -9,6 +10,7 @@ namespace JumperCables.Controllers
     {
         [HttpGet]
         [Route("ping")]
+        [EnableCors("AllowAnyOrigin")]
         public string Ping()
         {
             return "Pong";

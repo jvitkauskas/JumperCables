@@ -7,7 +7,7 @@ import {Auth} from '../../providers/authentication/auth.service';
 
 
 @Component({
-    selector: 'app', 
+    selector: 'app',
     providers: [Dictionary, CookieProvider, AppSettings, Auth],
     styleUrls: ['./app.component.scss'],
     templateUrl: './app.component.html'

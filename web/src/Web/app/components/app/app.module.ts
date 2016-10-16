@@ -17,7 +17,7 @@ import {LangSelectorComponent} from '../header/lang.selector.component';
 import {HeaderComponent} from '../header/header.component';
 import {FooterComponent} from '../footer/footer.component';
 import {Auth} from '../../providers/authentication/auth.service.ts';
-
+import {ContactsProvider } from '../contacts/contacts.provider';
 
 @NgModule({
     imports: [
@@ -35,11 +35,12 @@ import {Auth} from '../../providers/authentication/auth.service.ts';
         AboutComponent
     ],
     providers: [
-        { provide: APP_BASE_HREF,  useValue: '/' },
+        { provide: APP_BASE_HREF, useValue: '/' },
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         { provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig },
         AUTH_PROVIDERS,
-        Auth
+        Auth,
+        ContactsProvider
     ],
     bootstrap: [AppComponent]
 })
