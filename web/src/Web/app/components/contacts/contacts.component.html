@@ -1,1 +1,12 @@
-﻿Contacts page
+﻿<div *ngIf="!contacts">Loading...</div>
+<div *ngIf="contacts">
+    <address *ngFor="let contact of contacts">
+        <strong>{{contact.name}}</strong><br>
+        {{contact.streetAddress}}<br>
+        {{contact.cityAddress}}<br>
+        <span *ngIf="contact.phone">
+            <abbr title="Phone">P:</abbr> {{contact.phone}}
+        </span>
+    </address>
+</div>
+
