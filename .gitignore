@@ -256,3 +256,4 @@ node_modules/
 typings/
 wwwroot/
 .vscode
+api/src/WebAPI/Properties/PublishProfiles/
