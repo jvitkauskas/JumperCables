@@ -2,16 +2,16 @@
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Contact } from './contact';
+import {AppSettings} from '../../../providers/settings/appSettings.ts'
 
 @Injectable()
 export class ContactsProvider {
-    private url: string = "http://localhost:5001/api/contacts"; // TODO Temp value, note on CORS
 
-    constructor(private http: Http) {
+    constructor(private http: Http, private appSettings: AppSettings) {
     }
 
     public get(): Observable<Array<Contact>> {
-        return this.http.get(this.url).map(response => {
+        return this.http.get(this.appSettings.settings["apiUrl"] + "/api/contacts").map(response => {
             return response.json();
         }).catch((err, caught) => {
             let response = JSON.parse(err._body) || 'Server error';
