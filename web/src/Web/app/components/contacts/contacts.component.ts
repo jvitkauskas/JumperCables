@@ -10,7 +10,7 @@ import {Contact} from "./shared/contact"
 })
 
 export class ContactsComponent {
-    private contacts : Array<Contact>;
+    private contacts: Array<Contact>;
 
     constructor(private provider: ContactsProvider) {
         this.provider.get().subscribe(r => this.contacts = r);

@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "name": "JumperCables",
+  "name": "jumper-cables",
   "private": true,
   "dependencies": {
     "@angular/common": "2.0.0",

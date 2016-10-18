@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JumperCables.Model;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,14 +17,10 @@ namespace JumperCables.Controllers
             {
                 new Contact
                 {
-                    Name = "awd",
-                    StreetAddress = "awdawd",
-                    CityAddress = "awaw1211e"
-                },
-                new Contact
-                {
-                    Name = "awd",
-                    CityAddress = "awaw1211e"
+                    Name = "Brayden Knight",
+                    StreetAddress = "1138 Spring Hill Rd",
+                    CityAddress = "San Francisco, CA 94103",
+                    Phone = "(147)-880-7489"
                 }
             };
         }
